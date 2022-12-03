@@ -6,7 +6,7 @@ body {
     background-color: #002940;
 }
 
-.title_container {
+.header_container {
     display: flex;
     flex-direction: row;
     background-color: #006890;
@@ -16,11 +16,16 @@ body {
     align-items: center;
 }
 
-.name_container {
+.header_title_container {
     flex: 6;
 }
 
-.LOGO_img {
+.header_title {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.header_logo_img {
     flex: 1;
     border-radius: 50%;
     border: solid white 10px;
@@ -28,7 +33,7 @@ body {
     width: 1px;
 }
 
-.s1_container {
+.payment_container {
     display: flex;
     flex-direction: row;
     color: white;
@@ -38,12 +43,15 @@ body {
     padding: 5px 10px 15px 10px;
 }
 
-.title_title {
-    font-size: 50px;
-    font-weight: 900;
+.payment_title {
+    flex: 5;
 }
 
-.s2_container{
+.payment_price {
+    flex: 1;
+}
+
+.menu_list_container {
     padding: 10px 10px;
     background-color: white;
     margin: 0 10px;
@@ -55,7 +63,7 @@ body {
 
 }
 
-.menu_container{
+.menu_container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,25 +73,18 @@ body {
     padding: 10px;
 }
 
-.menu_name{
+.menu_name {
     font-weight: 700;
     font-size: 15px;
     margin-top: 3px;
 }
 
-.menu_price{
+.menu_price {
     font-size: 12px;
     margin-top: 3px;
 }
 
-.menu_img{
+.menu_img {
     width: 100px;
 }
 
-.s1_1{
-    flex: 5;
-}
-
-.s1_2{
-    flex: 1;
-}

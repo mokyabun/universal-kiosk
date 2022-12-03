@@ -1,23 +1,29 @@
-body{
+body {
     background-color: #006890;
-    margin:0;
+    margin: 0;
     padding: 10% 5%;
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.Kiosk-name{
-    color:white;
+.kiosk_title {
+    color: white;
     font-weight: 900;
     font-size: 9vh;
 }
 
-.dummy_div{
+.container_title {
+    color: white;
+    font-weight: 600;
+    margin: 6px 0;
+}
+
+.dummy_div {
     padding-top: 15vh;
 }
 
-.QR_container{
+.qr_container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,28 +31,27 @@ body{
     margin-bottom: 5vh;
 }
 
-.QR_img{
+.qr_img {
     width: 30%;
 }
 
-.container_title{
-    color:white;
-    font-weight: 600;
-    margin: 6px 0;
-}
-
-.choice_container{
+.choice_container {
     display: flex;
     flex-direction: row;
 }
 
-.opt_container{
+.opt_container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.opt_img{
+.opt1_img {
+    width: 70%;
+    border-radius: 15px;
+}
+
+.opt2_img {
     width: 70%;
     border-radius: 15px;
 }
