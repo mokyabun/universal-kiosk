@@ -1,0 +1,52 @@
+body{
+    background-color: #006890;
+    margin:0;
+    padding: 10% 5%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Kiosk-name{
+    color:white;
+    font-weight: 900;
+    font-size: 9vh;
+}
+
+.dummy_div{
+    padding-top: 15vh;
+}
+
+.QR_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.QR_img{
+    width: 30%;
+}
+
+.container_title{
+    color:white;
+    font-weight: 600;
+    margin: 6px 0;
+}
+
+.choice_container{
+    display: flex;
+    flex-direction: row;
+}
+
+.opt_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opt_img{
+    width: 70%;
+    border-radius: 15px;
+}
