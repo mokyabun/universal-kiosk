@@ -1,2 +1,2 @@
-# universial-kiosk
-Online ordering system with universial design
+# universal-kiosk
+Online ordering system with universal design
