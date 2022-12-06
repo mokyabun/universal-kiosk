@@ -28,7 +28,7 @@ body {
 .header_logo_img {
     flex: 1;
     border-radius: 50%;
-    border: solid white 10px;
+    /* border: solid white 10px; */
     text-align: center;
     width: 1px;
 }
