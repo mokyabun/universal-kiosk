@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/kiosk-order-page.css' %}" type="text/css">
+</head>
+<body>
+<div class="header_container">
+    <div class="header_title_container">
+        <div class="header_title">Universal</div>
+        <div class="header_title">Kiosk</div>
+    </div>
+    <img src="{% static 'img/QR.png' %}" class="header_logo_img">
+</div>
+
+<div class="payment_container">
+    <div class="payment_title">총 주문금액</div>
+    <div class="payment_price">
+        <div id="total_price">0</div>
+        <div>원</div>
+    </div>
+    <img class="payment_img" src="{% static 'img/QR.png' %}" style="width:20px;">
+</div>
+
+<div class="menu_list_container">
+    {% for stuff in stuffs %}
+        <div class="menu_container">
+            <img src="{{ stuff.img }}" class="menu_img">
+            <div class="menu_name">{{ stuff.name }}</div>
+            <div class="menu_price">
+                <div>&#x20A9;</div>
+                <div id="price_{{ stuff.id }}">{{ stuff.price }}</div>
+            </div>
+            <input type="checkbox" class="checkbox" id="chk_{{ stuff.id }}">
+        </div>
+    {% endfor %}
+</div>
+<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
