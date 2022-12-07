@@ -21,3 +21,7 @@ Django_project/app/migrations/*
 
 # db도 마찬가지임. 모델은 계속 수정될 예정이라 이런 커밋은 불필요함.
 Django_project/db.sqlite3 
+
+# PlatformIO
+.pio
+.vscode
