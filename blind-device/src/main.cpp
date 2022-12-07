@@ -20,8 +20,8 @@ const int http_delay = 10000;  // 10 second delay
 // Keypad
 const byte rows = 4;
 const byte cols = 4;
-byte row_pins[rows] = {D3, D2, D1, D0};
-byte col_pins[cols] = {D7, D6, D4, D3};
+byte row_pins[rows] = {D0, D1, D2, D3};
+byte col_pins[cols] = {D4, D5, D6, D7};
 char keys[rows][cols] = {
     {'1','2','3','A'},
     {'4','5','6','B'},
@@ -35,17 +35,25 @@ char keys[rows][cols] = {
  * @param orders
  * @return int 
  */
-int send_order(int orders[]) {
+int send_order(int orders[], int order_count) {
     if (!(orders[0] > 0)) return -1;
     if (WiFi.status() != WL_CONNECTED) return -1;
 
     WiFiClient client;
     HTTPClient http;
+    String send_message = "{\"orders\":";
+
+    for (int i = 0; i < order_count; i++) {
+        send_message += "[";
+        send_message += (char) order_count+'0';
+        send_message += ",";
+    }
+    send_message += "]}";
 
     http.begin(client, server_url);
 
     http.addHeader("Content-Type", "application/json");
-    int httpResponseCode = http.POST("{}");
+    int httpResponseCode = http.POST(send_message);
 
     Serial.print("HTTP Response code: ");
     Serial.println(httpResponseCode);
@@ -99,6 +107,7 @@ void loop() {
                     }
                     
                     else if (key_value == 'B') {
+                        orders[order_count] = order_number;
                         order_count++;
                     }
 
@@ -109,7 +118,8 @@ void loop() {
                     // http POST to server
                     else if (key_value == 'D') {
                         if (delay_count - millis() > http_delay) {
-                            send_order(orders);
+                            if (send_order(orders, order_count) == -1) Serial.println("send error");
+                            else Serial.println("sended");
 
                             delay_count = millis();
                         }
