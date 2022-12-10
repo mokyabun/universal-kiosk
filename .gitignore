@@ -25,3 +25,19 @@ Django_project/db.sqlite3
 # PlatformIO
 .pio
 .vscode
+
+# Pycharm
+.idea
+
+# SvelteKit
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+front-end/flask-test/data.json
