@@ -1,5 +1,6 @@
 <script>
     import { base } from "$app/paths";
+    document.querySelector('body').style.backgroundColor='#006890';
 </script>
 
 <head>
@@ -70,6 +71,7 @@
     .choice_container {
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
 
     .opt_container {

@@ -12,17 +12,15 @@
     }
 </script>
 
-<div class="menu_container">
-    <label>
-        <input type="checkbox" class="checkbox" id="chk_{menu.id}" on:change={selectMenu} hidden/>
-        <img src={menu.image} alt="menu_image" class="menu_img">
-        <div class="menu_name">{menu.name}</div>
-        <div class="menu_price">
-            <div>&#x20A9;</div>
-            <div id="price_{menu.id}">{menu.price}</div>
-        </div>
-    </label>
-</div>
+<label class="menu_container">
+    <img src={menu.image} alt="menu_image" class="menu_img">
+    <div class="menu_name">{menu.name}</div>
+    <div class="menu_price">
+        <div>&#x20A9;</div>
+        <div id="price_{menu.id}">{menu.price}</div>
+    </div>
+    <input type="checkbox" class="checkbox" id="chk_{menu.id}" on:change={selectMenu} hidden/>
+</label>
 
 <style>
     .menu_container {

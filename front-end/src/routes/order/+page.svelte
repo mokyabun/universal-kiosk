@@ -17,6 +17,8 @@
         if (event.detail.checked) totalPrice -= event.detail.menu.price
         else totalPrice += event.detail.menu.price
     }
+
+    document.querySelector('body').style.backgroundColor='#002940';
 </script>
 
 <head>
