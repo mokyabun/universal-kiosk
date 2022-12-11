@@ -38,7 +38,7 @@
             <div id="total_price">{totalPrice}</div>
             <div>원</div>
         </div>
-        <img class="payment_img" src="/images/shopping_cart.png" alt="shopping_cart" style="width:20px;">
+        <img class="payment_img" src="/images/shopping_cart.png" alt="shopping_cart">
     </div>
 
     <div class="menu_list_container">
@@ -73,8 +73,8 @@
     }
 
     .header_title {
-        font-size: 50px;
         font-weight: 900;
+        font-size: 6vh;
     }
 
     .header_logo_img {
@@ -97,14 +97,17 @@
 
     .payment_title {
         flex: 5;
+        font-size: 3vh;
     }
 
     .payment_price {
         flex: 1;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: right;
         align-items: center;
+        margin-right: 1vh;
+        font-size: 3vh;
     }
 
     .menu_list_container {
@@ -116,6 +119,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 15px;
-
+    }
+    
+    .payment_img {
+        width: 3vh;
+        object-fit: contain;
     }
 </style>

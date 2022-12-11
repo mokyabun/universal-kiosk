@@ -57,7 +57,7 @@
         color: white;
         font-weight: 600;
         font-size: 2vh;
-        margin: 6px 0;
+        margin: 6px;
     }
 
     .dummy_div {
@@ -73,7 +73,7 @@
     }
 
     .qr_img {
-        width: 30%;
+        width: 20vh;
     }
 
     .choice_container {
@@ -86,6 +86,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 20vh;
     }
 
     .opt1_img {

@@ -35,18 +35,19 @@
 
     .menu_name {
         font-weight: 700;
-        font-size: 15px;
+        font-size: 2.5vh;
         margin-top: 3px;
     }
 
     .menu_price {
-        font-size: 12px;
+        font-size: 1.5vh;
         margin-top: 3px;
         margin-bottom: 5px;
         display: flex;
     }
 
     .menu_img {
-        width: 100px;
+        width: 18vh;
+        margin-bottom: 5px;
     }
 </style> 
