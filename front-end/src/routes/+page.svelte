@@ -7,27 +7,27 @@
 </head>
 <body>
     <main>
-<div class="kiosk_title">Universal</div>
-<div class="kiosk_title">Kiosk</div>
-<div class="dummy_div"></div>
-<div class="qr_container">
-    <div class="container_title">Web 주문</div>
-    <img src="/images/QR.png" alt="QR_code" class="qr_img">
-</div>
-<div class="choice_container">
-    <div class="opt_container">
-        <div class="img_container">
-            <a href="{base}/order"> <img src="/images/takeout_button.png" alt="takeout_button" class="opt1_img"> </a>
+        <div class="kiosk_title">Universal</div>
+        <div class="kiosk_title">Kiosk</div>
+        <div class="dummy_div"></div>
+        <div class="qr_container">
+            <div class="container_title">Web 주문</div>
+            <img src="/images/QR.png" alt="QR_code" class="qr_img">
         </div>
-        <div class="container_title">포장</div>
-    </div>
-    <div class="opt_container">
-        <div class="img_container">
-            <a href="{base}/order"> <img src="/images/shop_button.png" alt="shop_button" class="opt2_img"> </a>
+        <div class="choice_container">
+            <div class="opt_container">
+                <div class="img_container">
+                    <a href="{base}/order"> <img src="/images/takeout_button.png" alt="takeout_button" class="opt1_img"> </a>
+                </div>
+                <div class="container_title">포장</div>
+            </div>
+            <div class="opt_container">
+                <div class="img_container">
+                    <a href="{base}/order"> <img src="/images/shop_button.png" alt="shop_button" class="opt2_img"> </a>
+                </div>
+                <div class="container_title">매장</div>
+            </div>
         </div>
-        <div class="container_title">매장</div>
-    </div>
-</div>
     </main>
 </body>
 
@@ -56,6 +56,7 @@
     .container_title {
         color: white;
         font-weight: 600;
+        font-size: 2vh;
         margin: 6px 0;
     }
 
