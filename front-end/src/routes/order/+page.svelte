@@ -17,8 +17,6 @@
         if (event.detail.checked) totalPrice -= event.detail.menu.price
         else totalPrice += event.detail.menu.price
     }
-
-    document.querySelector('body').style.backgroundColor='#002940';
 </script>
 
 <head>
@@ -52,19 +50,20 @@
 
 <style>
     body {
+        background-color: #002940;
         margin: 0;
         display: flex;
         flex-direction: column;
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #002940;
+        height: 100vh;
     }
 
     .header_container {
+        background-color: #006890;
+        padding: 5px 10px;
         display: flex;
         flex-direction: row;
-        background-color: #006890;
         color: white;
-        padding: 5px 10px;
         justify-content: space-between;
         align-items: center;
     }
