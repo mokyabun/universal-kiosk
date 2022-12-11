@@ -1,12 +1,12 @@
 <script>
     import { base } from "$app/paths";
-    document.querySelector('body').style.backgroundColor='#006890';
 </script>
 
 <head>
     <meta charset="UTF-8">
 </head>
 <body>
+    <main>
 <div class="kiosk_title">Universal</div>
 <div class="kiosk_title">Kiosk</div>
 <div class="dummy_div"></div>
@@ -28,16 +28,23 @@
         <div class="container_title">매장</div>
     </div>
 </div>
+    </main>
 </body>
 
 <style>
     body {
         background-color: #006890;
         margin: 0;
-        padding: 10% 5%;
+        padding: 0;
         display: flex;
         flex-direction: column;
         font-family: Arial, Helvetica, sans-serif;
+        height: 100vh;
+    }
+
+    main {
+        margin: 0;
+        padding: 10% 5%;
     }
 
     .kiosk_title {
