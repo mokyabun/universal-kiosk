@@ -17,13 +17,13 @@
         <div class="choice_container">
             <div class="opt_container">
                 <div class="img_container">
-                    <a href="{base}/order"> <img src="/images/takeout_button.png" alt="takeout_button" class="opt1_img"> </a>
+                    <a href="/order"> <img src="/images/takeout_button.png" alt="takeout_button" class="opt1_img"> </a>
                 </div>
                 <div class="container_title">포장</div>
             </div>
             <div class="opt_container">
                 <div class="img_container">
-                    <a href="{base}/order"> <img src="/images/shop_button.png" alt="shop_button" class="opt2_img"> </a>
+                    <a href="/order"> <img src="/images/shop_button.png" alt="shop_button" class="opt2_img"> </a>
                 </div>
                 <div class="container_title">매장</div>
             </div>
