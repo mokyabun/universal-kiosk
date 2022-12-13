@@ -1,0 +1,8 @@
+[
+  {"id": 1, "name":"아메리카노", "price":2000, "image":"https://cdn.pixabay.com/photo/2016/08/05/17/31/coffee-1572738_1280.png"},
+  {"id": 2, "name":"라떼", "price":2500, "image":"https://cdn.pixabay.com/photo/2016/08/05/17/31/coffee-1572739_1280.png"},
+  {"id": 3, "name":"홍차", "price":2000, "image":"https://cdn.pixabay.com/photo/2013/07/12/17/55/tea-152609_1280.png"},
+  {"id": 4, "name":"레몬에이드", "price":2000, "image":"https://cdn.pixabay.com/photo/2016/11/15/09/26/drinks-1825702_1280.png"},
+  {"id": 5, "name":"쿠키", "price":2500, "image":"https://cdn.pixabay.com/photo/2014/09/04/05/27/cookies-435296_1280.png"},
+  {"id": 6, "name":"도넛", "price":3000, "image":"https://cdn.pixabay.com/photo/2017/07/27/07/16/donut-2544153_1280.png"}
+]
