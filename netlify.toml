@@ -1,5 +1,4 @@
 [build]
     base = "web/front-end"
     command = "npm run build"
-    publish = "src"
-    
+    publish = "web/front-end/src"
