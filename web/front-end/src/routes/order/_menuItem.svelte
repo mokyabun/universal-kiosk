@@ -20,10 +20,6 @@
 </button>
 
 <style>
-    .menu_button {
-        display: none;
-    }
-
     .menu_name {
         font-weight: 700;
         font-size: 2.5vh;
