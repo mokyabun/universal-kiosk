@@ -40,14 +40,14 @@ class OrderController:
         self._menu_list: list[Menu] = []
         for i in range(1, 10):
             try:
-                menu = driver.find_element(By.XPATH, f'/html/body/div/body/div[3]/label[{i}]')
+                menu = driver.find_element(By.XPATH, f'/html/body/div/body/div[3]/button[{i}]')
             except:
                 break
 
             new_menu = Menu(
                 menu.find_element(By.XPATH, 'div[1]').text,
                 menu.find_element(By.XPATH, 'div[2]/div[2]').text,
-                menu.find_element(By.XPATH, f'input')
+                menu
             )
 
             self._menu_list.append(new_menu)
@@ -58,7 +58,7 @@ class OrderController:
 
         number -= 1
 
-        self._menu_list[number].menu_button.click()
+        self._menu_list[number].menu_button.send_keys('\n')
         self._menu_list[number].selected = not self._menu_list[number].selected
 
     @property
@@ -73,3 +73,5 @@ if __name__ == '__main__':
 
     order_controller = OrderController()
     order_controller.select_menu(2)
+    order_controller.select_menu(1)
+    order_controller.select_menu(3)
