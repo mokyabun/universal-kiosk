@@ -5,7 +5,7 @@
     let menus = []
     
     onMount(async () => {
-        const response = await fetch("https://api.krome0.com/api/menus")
+        const response = await fetch("https://api.krome0.com/menus")
         menus = response.status === 200 ? await response.json() : []
     });
 
