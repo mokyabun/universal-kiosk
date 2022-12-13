@@ -3,6 +3,7 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service as ChromeService
+from selenium.webdriver.common.keys import Keys
 from webdriver_manager.chrome import ChromeDriverManager
 from dataclasses import dataclass
 
@@ -39,14 +40,14 @@ class OrderController:
         self._menu_list: list[Menu] = []
         for i in range(1, 10):
             try:
-                menu = driver.find_element(By.XPATH, '/html/body/div/body/div[3]/label[1]')
+                menu = driver.find_element(By.XPATH, f'/html/body/div/body/div[3]/label[{i}]')
             except:
                 break
 
             new_menu = Menu(
                 menu.find_element(By.XPATH, 'div[1]').text,
                 menu.find_element(By.XPATH, 'div[2]/div[2]').text,
-                menu.find_element(By.ID, f'chk_{i}')
+                menu.find_element(By.XPATH, f'input')
             )
 
             self._menu_list.append(new_menu)
@@ -55,8 +56,14 @@ class OrderController:
         if number > len(self._menu_list):
             return None
 
+        number -= 1
+
         self._menu_list[number].menu_button.click()
         self._menu_list[number].selected = not self._menu_list[number].selected
+
+    @property
+    def menu_count(self):
+        return len(self._menu_list)
 
 
 if __name__ == '__main__':
@@ -65,4 +72,4 @@ if __name__ == '__main__':
     driver.implicitly_wait(3)
 
     order_controller = OrderController()
-    order_controller.select_menu(1)
+    order_controller.select_menu(2)
