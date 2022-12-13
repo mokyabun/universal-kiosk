@@ -53,7 +53,7 @@ int send_order(int orders[], int order_count) {
     http.begin(client, server_url);
 
     http.addHeader("Content-Type", "application/json");
-    int httpResponseCode = http.POST(send_message);
+    int httpResponseCode = http.POST("{\"test\":\"test message\"}");
 
     Serial.print("HTTP Response code: ");
     Serial.println(httpResponseCode);
