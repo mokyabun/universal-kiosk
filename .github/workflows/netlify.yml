@@ -13,7 +13,7 @@ jobs:
         uses: nwtgck/actions-netlify@v2.0.0
         with:
           publish-dir: './web/front-end/src'
-          production-branch: master
+          production-branch: github-actions
           github-token: ${{ secrets.GH_TOKEN }}
           deploy-message: "Deploy from GitHub Actions"
           enable-pull-request-comment: false
