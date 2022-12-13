@@ -53,7 +53,8 @@
         display: flex;
         flex-direction: column;
         font-family: Arial, Helvetica, sans-serif;
-        height: 100vh;
+        height: 100%;
+        padding-bottom: 5px;
     }
 
     .header_container {
