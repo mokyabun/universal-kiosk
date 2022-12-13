@@ -44,6 +44,8 @@
             <MenuItem {menu} on:selectMenu={calculatePrice} />
         {/each}
     </div>
+
+    <a href="/thankyou">총 {totalPrice}원 결제</a>
 </body>
 
 <style>
@@ -123,5 +125,17 @@
     .payment_img {
         width: 3vh;
         object-fit: contain;
+    }
+
+    a:link, a:visited {
+        background-color: #F7F7F7;
+        color: black;
+        padding: 15px 25px;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 700;
+        display: inline-block;
+        margin-top: 1vh;
     }
 </style>
