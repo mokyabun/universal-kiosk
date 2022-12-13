@@ -2,3 +2,4 @@
     base = "web/front-end"
     command = "npm run build"
     publish = "src"
+    
