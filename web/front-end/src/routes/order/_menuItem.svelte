@@ -17,7 +17,7 @@
         <div>&#x20A9;</div>
         <div id="price_{menu.id}">{menu.price}</div>
     </div>
-    <input type="checkbox" class="checkbox" id="chk_{menu.id}" on:change={selectMenu} hidden/>
+    <input type="checkbox" class="checkbox" id="chk_{menu.id}" on:change={selectMenu} style="display: none;"/>
 </label>
 
 <style>
