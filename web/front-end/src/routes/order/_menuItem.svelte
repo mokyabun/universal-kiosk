@@ -16,10 +16,7 @@
 <button type="button" class="menu_button" on:click={selectMenu} style="background-color: {color}">
     <img src={menu.image} alt="menu_image" class="menu_img">
     <div class="menu_name">{menu.name}</div>
-    <div class="menu_price">
-        <div>&#x20A9;</div>
-        <div id="price_{menu.id}">{menu.price}</div>
-    </div>
+    <div class="menu_price">{menu.price}&#x20A9;</div>
 </button>
 
 <style>
@@ -50,7 +47,7 @@
         font-size: 1.5vh;
         margin-top: 3px;
         margin-bottom: 5px;
-        display: flex;
+        text-align: center;
     }
 
     .menu_img {
