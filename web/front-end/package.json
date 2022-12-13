@@ -8,6 +8,7 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
+        "@sveltejs/kit": "next",
 		"@sveltejs/adapter-netlify": "^1.0.0-next.86",
 		"svelte": "^3.54.0",
 		"vite": "^4.0.0"
