@@ -2,8 +2,6 @@
     import { createEventDispatcher } from 'svelte'
     export let menu
 
-    console.log("[DEBUG]: "+menu)
-
     let checked = false
     const dispatch = createEventDispatcher()
     function selectMenu() {

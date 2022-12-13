@@ -5,10 +5,8 @@
     let menus = []
     
     onMount(async () => {
-        const response = await fetch("/api/menus")
-        console.log("[DEBUG]: "+response)
+        const response = await fetch("https://api.krome0.com/api/menus")
         menus = response.status === 200 ? await response.json() : []
-        console.log("[DEBUG]: "+menus)
     });
 
     let totalPrice = 0
