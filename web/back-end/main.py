@@ -6,7 +6,7 @@ with open('data.json', 'r') as file:
     json_data = json.load(file)
 
 app = Flask(__name__)
-CORS(app, resources={r"*": {"origins": "https://kiosk.krome0.com"}})
+CORS(app, resources={r"*": {"origins": "<your server url>"}})  # Use if you are seeing CORS error
 
 
 @app.route('/menus')
