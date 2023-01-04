@@ -3,8 +3,8 @@
 </head>
 
 <body>
-    <div class="thank_you">구매해주셔서 감사합니다.</div>
-    <a href="/">홈으로 이동</a>
+    <div class="thank_you">Thank you.</div>
+    <a href="/">Back to home</a>
 </body>
 
 <style>

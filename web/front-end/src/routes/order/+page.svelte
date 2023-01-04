@@ -5,7 +5,7 @@
     let menus = []
     
     onMount(async () => {
-        const response = await fetch("https://api.krome0.com/menus")
+        const response = await fetch("<your menu back-end api server>")  // Add your server url
         menus = response.status === 200 ? await response.json() : []
     });
 
@@ -31,10 +31,10 @@
     </div>
 
     <div class="payment_container">
-        <div class="payment_title">총 주문금액</div>
+        <div class="payment_title">Total</div>
         <div class="payment_price">
+            <div>$</div>
             <div id="total_price">{totalPrice}</div>
-            <div>원</div>
         </div>
         <img class="payment_img" src="/images/shopping_cart.png" alt="shopping_cart">
     </div>
@@ -45,7 +45,7 @@
         {/each}
     </div>
 
-    <a href="/thankyou">총 {totalPrice}원 결제</a>
+    <a href="/thankyou">Total: $ {totalPrice}</a>
 </body>
 
 <style>
